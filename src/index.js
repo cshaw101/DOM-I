@@ -52,4 +52,9 @@ const middleImg = document.querySelector('#middle-img');
 middleImg.setAttribute('src', siteContent.images['accent-img']);
 
 //nav
-
+const navLink = document.querySelectorAll('header nav a')
+const navLinkTexts = Object.values(siteContent.nav)
+navLink.forEach((link, index) => {
+link.textContent = navLinkTexts[index]
+link.classList.add('italic')
+})
