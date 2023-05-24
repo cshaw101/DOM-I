@@ -40,3 +40,16 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+//images
+const logoImg = document.querySelector('#logo-img');
+logoImg.setAttribute('src', siteContent.images['logo-img'] );
+
+const ctaImage = document.querySelector('#cta-img');
+ctaImage.setAttribute('src', siteContent.images['cta-img']);
+
+const middleImg = document.querySelector('#middle-img');
+middleImg.setAttribute('src', siteContent.images['accent-img']);
+
+//nav
+
