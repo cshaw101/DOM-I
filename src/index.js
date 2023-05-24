@@ -58,3 +58,28 @@ navLink.forEach((link, index) => {
 link.textContent = navLinkTexts[index]
 link.classList.add('italic')
 })
+
+
+//title
+const bigText = document.querySelector('h1')
+bigText.textContent = 'DOM is Awesome'
+const bigButton = document.querySelector('button')
+bigButton.textContent = 'Get Started'
+
+
+//main-body
+const topContent = document.querySelector('.top-content')
+topContent.children[0].children[0].textContent = siteContent['main-content']['features-h4']
+topContent.children[0].children[1].textContent = siteContent['main-content']['features-content']
+topContent.children[1].children[0].textContent = siteContent['main-content']['about-h4']
+topContent.children[1].children[1].textContent = siteContent['main-content']['about-content']
+
+const bottomContent = document.querySelector('.bottom-content')
+const h4sBottom = bottomContent.querySelectorAll('h4')
+h4sBottom[0].textContent = siteContent['main-content']['services-h4']
+h4sBottom[1].textContent = siteContent['main-content']['product-h4']
+h4sBottom[2].textContent = siteContent['main-content']['vision-h4']
+const psBottom = bottomContent.querySelectorAll('p')
+psBottom[0].textContent = siteContent['main-content']['services-content']
+psBottom[1].textContent = siteContent['main-content']['product-content']
+psBottom[2].textContent = siteContent['main-content']['vision-content']
